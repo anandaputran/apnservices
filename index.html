@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>APN Services | Web Development Services</title>
+
+    <meta name="description" content="APN Services offers focused web development services for landing pages and company profile websites." />
+
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+
+    <meta name="theme-color" content="#0b0b0b" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ===== Header / Navbar ===== -->
+    <header id="header">
+      <nav class="navbar container">
+        <a href="#hero" class="brand" aria-label="Back to homepage">
+          <img src="assets/icons/apn-logo.webp" alt="APN Logo" class="brand-logo" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#services" data-i18n="navServices">Services</a></li>
+          <li><a href="#work" data-i18n="navWork">Work</a></li>
+          <li><a href="#process" data-i18n="navProcess">Process</a></li>
+          <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+          <li><a href="https://anandaputran.github.io/" data-i18n="navPortfolio">Portfolio</a></li>
+          <li><a href="https://apnuniverse.github.io/">UNIVERSE</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="language-toggle" type="button" aria-label="Switch language">
+            <img src="assets/icons/globe.svg" alt="" class="language-icon" aria-hidden="true" />
+            <span class="language-label">ID</span>
+          </button>
+
+          <button type="button" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== Hero Section ===== -->
+      <section id="hero" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="hero-eyebrow" data-i18n="heroEyebrow">Web Development Services</p>
+
+            <h1 data-i18n="heroTitle">Focused websites for clear business goals.</h1>
+
+            <p class="hero-description" data-i18n="heroDescription">Landing pages and company profile websites built with responsive development and clearly defined project scope.</p>
+
+            <div class="hero-actions">
+              <a href="#services" class="btn btn-primary" data-i18n="heroPrimary">Explore Services</a>
+
+              <a href="#contact" class="btn btn-secondary" data-i18n="heroSecondary">Discuss a Project</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <img src="assets/icons/apn-logo.webp" alt="" class="hero-logo" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Services Section ===== -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label" data-i18n="servicesLabel">Services</p>
+
+            <h2 data-i18n="servicesTitle">Two focused solutions for different business needs.</h2>
+
+            <p class="section-description" data-i18n="servicesDescription">Choose the service that best matches your website goal. Each service has a clearly defined scope and package options.</p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-card-top">
+                <span class="service-number">01</span>
+
+                <div class="service-content">
+                  <h3 data-i18n="landingTitle">Landing Page</h3>
+
+                  <p data-i18n="landingDescription">A focused one-page website for promoting a product, service, campaign, event, or specific business goal.</p>
+                </div>
+              </div>
+
+              <div class="service-meta">
+                <span data-i18n="metaResponsive">Responsive</span>
+                <span data-i18n="metaFixedScope">Fixed Scope</span>
+                <span data-i18n="metaPackageOptions">Package Options</span>
+              </div>
+
+              <a href="landingpage.html" class="service-link">
+                <span data-i18n="viewPackages">View Packages</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="service-card">
+              <div class="service-card-top">
+                <span class="service-number">02</span>
+
+                <div class="service-content">
+                  <h3 data-i18n="companyTitle">Company Profile Website</h3>
+
+                  <p data-i18n="companyDescription">A professional business website for presenting your company, services, information, and contact details.</p>
+                </div>
+              </div>
+
+              <div class="service-meta">
+                <span data-i18n="metaResponsive">Responsive</span>
+                <span data-i18n="metaFixedScope">Fixed Scope</span>
+                <span data-i18n="metaPackageOptions">Package Options</span>
+              </div>
+
+              <a href="companyprofile.html" class="service-link">
+                <span data-i18n="viewPackages">View Packages</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="data/translations.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
