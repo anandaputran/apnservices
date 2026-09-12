@@ -66,6 +66,10 @@ const translations = {
     contactTitleLine2: "you’d like to discuss?",
     contactDescription: "Tell me what you need, and we can discuss the scope, timeline, and the service that fits your project.",
     contactButton: "Discuss a Project",
+
+    // ===== Footer =====
+    footerRights: "All rights reserved.",
+    footerBackToTop: "Back to top",
   },
 
   id: {
@@ -135,5 +139,9 @@ const translations = {
     contactTitleLine2: "yang ingin didiskusikan?",
     contactDescription: "Ceritakan kebutuhan Anda, lalu kita bisa membahas scope, timeline, dan layanan yang sesuai dengan proyek tersebut.",
     contactButton: "Diskusikan Proyek",
+
+    // ===== Footer =====
+    footerRights: "Hak cipta dilindungi.",
+    footerBackToTop: "Kembali ke atas",
   },
 };

@@ -63,6 +63,8 @@ function updateLanguage(language) {
 
   languageLabel.textContent = language === "en" ? "ID" : "EN";
 
+  updateWhatsAppLink(language);
+
   localStorage.setItem("language", language);
 }
 
@@ -73,3 +75,19 @@ languageToggle.addEventListener("click", () => {
 });
 
 updateLanguage(currentLanguage);
+
+// ===== Whatsapp =====
+
+const whatsappProjectLink = document.querySelector("#whatsappProjectLink");
+
+const whatsappMessages = {
+  en: "Hi, I'm interested in APN Services and would like to discuss my website project.",
+  id: "Halo, saya tertarik dengan layanan APN Services dan ingin mendiskusikan kebutuhan website saya.",
+};
+
+function updateWhatsAppLink(language) {
+  const phoneNumber = "6285694775590";
+  const message = encodeURIComponent(whatsappMessages[language]);
+
+  whatsappProjectLink.href = `https://wa.me/${phoneNumber}?text=${message}`;
+}
