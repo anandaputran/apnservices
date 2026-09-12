@@ -1046,7 +1046,6 @@ section {
   transform: translateY(0);
 }
 
-
 /* ===== Services ===== */
 
 .services {
@@ -1141,6 +1140,12 @@ section {
 
 .service-link:hover span[aria-hidden="true"] {
   transform: translateX(4px);
+}
+
+.nav-divider {
+  margin-left: 0.5rem;
+  padding-left: 2rem;
+  border-left: 1px solid #2d2d2d;
 }
 
 /* ===== Responsive: Tablet & Mobile ===== */
@@ -1372,8 +1377,17 @@ section {
   .service-card {
     min-height: 340px;
   }
-}
+  .nav-divider {
+    margin-left: 0;
+    margin-top: 0.5rem;
 
+    padding-left: 0;
+    padding-top: 0.5rem;
+
+    border-left: 0;
+    border-top: 1px solid #2d2d2d;
+  }
+}
 
 /* ===== Responsive: Small Mobile ===== */
 
@@ -1766,8 +1780,18 @@ section {
   .service-meta span {
     font-size: 0.68rem;
   }
-}
 
+  .nav-divider {
+    margin-left: 0;
+    margin-top: 0.5rem;
+
+    padding-left: 0;
+    padding-top: 0.5rem;
+
+    border-left: 0;
+    border-top: 1px solid #2d2d2d;
+  }
+}
 
 /* ===== Reduced Motion ===== */
 
