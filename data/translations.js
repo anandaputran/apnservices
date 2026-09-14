@@ -6,6 +6,8 @@ const translations = {
     navProcess: "Process",
     navContact: "Contact",
     navPortfolio: "Portfolio",
+    navOverview: "Overview",
+    navPackages: "Packages",
 
     // ===== Hero =====
     heroEyebrow: "Web Development Services",
@@ -235,6 +237,8 @@ const translations = {
     navProcess: "Proses",
     navContact: "Kontak",
     navPortfolio: "Portofolio",
+    navOverview: "Ringkasan",
+    navPackages: "Paket",
 
     // ===== Hero =====
     heroEyebrow: "Layanan Pengembangan Web",
