@@ -888,14 +888,14 @@ section {
 }
 
 .credential-item p,
-.credential-item > span {
+.credential-item>span {
   color: #777777;
   font-size: 0.82rem;
   font-weight: 500;
   line-height: 1.5;
 }
 
-.credential-item > span {
+.credential-item>span {
   flex-shrink: 0;
   text-align: right;
 }
@@ -1210,9 +1210,27 @@ section {
 }
 
 .package-price {
+  display: grid;
+  gap: 6px;
   margin-top: 14px;
-  color: #8e8e8e;
-  font-size: 0.85rem;
+}
+
+.package-price-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.package-price-item span {
+  color: #777777;
+  font-size: 0.8rem;
+}
+
+.package-price-item strong {
+  color: #f1f1f1;
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
 .package-body {
@@ -1256,7 +1274,7 @@ section {
   margin-bottom: 26px;
 }
 
-.package-meta > div {
+.package-meta>div {
   padding: 14px 16px;
   border: 1px solid #242424;
   border-radius: 14px;
@@ -1335,6 +1353,92 @@ section {
   color: #f1f1f1;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+/* ===== SCOPE & REQUIREMENTS ===== */
+
+.scope {
+  border-top: 1px solid #1d1d1d;
+}
+
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.scope-item-wide {
+  grid-column: 1 / -1;
+  width: min(720px, 100%);
+  justify-self: center;
+  border-color: #343434;
+  background: #131313;
+}
+
+.scope-item-wide h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #f1f1f1;
+}
+
+.scope-item-wide .scope-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
+  row-gap: 8px;
+}
+
+.scope-item {
+  padding: 24px;
+  border: 1px solid #242424;
+  border-radius: 18px;
+  background: #111111;
+}
+
+.scope-item-wide {
+  grid-column: 1 / -1;
+}
+
+.scope-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.scope-item p {
+  color: #9f9f9f;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.scope-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.scope-list li {
+  position: relative;
+  padding-left: 20px;
+  color: #a8a8a8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.scope-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #6f6f6f;
+}
+
+.scope-note {
+  margin-top: 24px;
+  color: #858585;
+  font-size: 0.85rem;
+  line-height: 1.6;
 }
 
 /* ===== Responsive: Tablet & Mobile ===== */
@@ -1566,6 +1670,7 @@ section {
   .service-card {
     min-height: 340px;
   }
+
   .nav-divider {
     margin-left: 0;
     margin-top: 0.5rem;
@@ -1578,56 +1683,74 @@ section {
   }
 
   /* ===== TABLET PACKAGES ===== */
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 
-.packages-grid {
+  .package-card {
+    padding: 24px;
+  }
+
+  .package-header {
+    align-items: center;
+  }
+
+  .package-toggle {
+    display: inline-flex;
+    flex: 0 0 auto;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #303030;
+    border-radius: 50%;
+    background: transparent;
+    color: #d4d4d4;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .package-card:not(.is-open) .package-body {
+    display: none;
+  }
+
+  .package-card.is-open .package-body {
+    display: flex;
+  }
+
+  /* ===== TABLET ADD-ONS ===== */
+  .addons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .addon-card {
+    padding: 22px;
+  }
+
+  /* ===== TABLET SCOPE ===== */
+  .scope-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scope-item-wide {
+    width: 100%;
+  }
+
+  .scope-item-wide h3 {
+  text-align: left;
+}
+
+.scope-item-wide .scope-list {
   grid-template-columns: 1fr;
-  gap: 16px;
 }
 
-.package-card {
-  padding: 24px;
-}
-
-.package-header {
-  align-items: center;
-}
-
-.package-toggle {
-  display: inline-flex;
-  flex: 0 0 auto;
-  width: 38px;
-  height: 38px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #303030;
-  border-radius: 50%;
-  background: transparent;
-  color: #d4d4d4;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.package-card:not(.is-open) .package-body {
-  display: none;
-}
-
-.package-card.is-open .package-body {
-  display: flex;
-}
-
-/* ===== TABLET ADD-ONS ===== */
-
-.addons-grid {
-  grid-template-columns: 1fr;
-}
-
-.addon-card {
-  padding: 22px;
-}
+  .scope-item {
+    padding: 22px;
+  }
 }
 
 /* ===== Responsive: Small Mobile ===== */
-
 @media (max-width: 600px) {
   .navbar {
     min-height: 68px;
@@ -1904,7 +2027,7 @@ section {
     padding: 18px 0;
   }
 
-  .credential-item > span {
+  .credential-item>span {
     text-align: left;
   }
 
@@ -2029,48 +2152,60 @@ section {
     border-top: 1px solid #2d2d2d;
   }
 
-    /* ===== MOBILE PACKAGES ===== */
-      .package-toggle {
-      display: none;
-      flex: 0 0 auto;
-      width: 38px;
-      height: 38px;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid #303030;
-      border-radius: 50%;
-      background: transparent;
-      color: #d4d4d4;
-      font-size: 1.1rem;
-      cursor: pointer;
-    }
-  
-    .package-toggle {
-      display: inline-flex;
-    }
-  
-    .package-card:not(.is-open) .package-body {
-      display: none;
-    }
-  
-    .package-card.is-open .package-body {
-      display: flex;
-    }
-  
-    .package-description {
-      margin-top: 22px;
-    }
-
-    /* ===== MOBILE ADD-ONS ===== */
-    
-    .addon-card {
-      padding: 20px;
-    }
-    
-    .addon-description {
-      margin-bottom: 18px;
-    }
+  /* ===== MOBILE PACKAGES ===== */
+  .package-toggle {
+    display: none;
+    flex: 0 0 auto;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #303030;
+    border-radius: 50%;
+    background: transparent;
+    color: #d4d4d4;
+    font-size: 1.1rem;
+    cursor: pointer;
   }
+
+  .package-toggle {
+    display: inline-flex;
+  }
+
+  .package-card:not(.is-open) .package-body {
+    display: none;
+  }
+
+  .package-card.is-open .package-body {
+    display: flex;
+  }
+
+  .package-description {
+    margin-top: 22px;
+  }
+
+  /* ===== MOBILE ADD-ONS ===== */
+  .addon-card {
+    padding: 20px;
+  }
+
+  .addon-description {
+    margin-bottom: 18px;
+  }
+
+  /* ===== MOBILE SCOPE ===== */
+  .scope-item {
+    padding: 20px;
+  }
+
+  .scope-list {
+    gap: 8px;
+  }
+
+  .scope-note {
+    margin-top: 20px;
+  }
+}
 
 /* ===== Reduced Motion ===== */
 

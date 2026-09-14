@@ -25,33 +25,22 @@
     <!-- ===== Header / Navbar ===== -->
     <header id="header">
       <nav class="navbar container">
-        <a href="index.html#hero" class="brand" aria-label="Back to homepage">
+        <a href="#hero" class="brand" aria-label="Back to homepage">
           <img src="assets/icons/apn-logo.webp" alt="APN Logo" class="brand-logo" />
         </a>
 
         <ul class="nav-links">
-          <li>
-            <a href="index.html#services" data-i18n="navServices"> Services </a>
-          </li>
-
-          <li>
-            <a href="index.html#work" data-i18n="navWork"> Work </a>
-          </li>
-
-          <li>
-            <a href="index.html#process" data-i18n="navProcess"> Process </a>
-          </li>
-
-          <li>
-            <a href="index.html#contact" data-i18n="navContact"> Contact </a>
-          </li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
 
           <li class="nav-divider">
-            <a href="https://anandaputran.github.io/" data-i18n="navPortfolio"> Portfolio </a>
+            <a href="https://anandaputran.github.io/">Portfolio</a>
           </li>
 
           <li>
-            <a href="https://apnuniverse.github.io/"> UNIVERSE </a>
+            <a href="https://apnuniverse.github.io/">UNIVERSE</a>
           </li>
         </ul>
 
@@ -81,7 +70,7 @@
             <div class="hero-actions">
               <a href="#overview" class="btn btn-primary" data-i18n="landingHeroPrimary"> Explore the Service </a>
 
-              <a href="index.html#contact" class="btn btn-secondary" data-i18n="landingHeroSecondary"> Discuss a Project </a>
+              <a href="#contact" class="btn btn-secondary" data-i18n="landingHeroSecondary"> Discuss a Project </a>
             </div>
           </div>
 
@@ -211,7 +200,7 @@
                   </div>
                 </div>
 
-                <a href="index.html#contact" class="btn btn-secondary" data-i18n="landingPackageDiscuss"> Discuss Package </a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="landingPackageDiscuss"> Discuss Package </a>
               </div>
             </article>
 
@@ -282,7 +271,7 @@
                   </div>
                 </div>
 
-                <a href="index.html#contact" class="btn btn-primary" data-i18n="landingPackageDiscuss"> Discuss Package </a>
+                <a href="#contact" class="btn btn-primary" data-i18n="landingPackageDiscuss"> Discuss Package </a>
               </div>
             </article>
 
@@ -351,7 +340,7 @@
                   </div>
                 </div>
 
-                <a href="index.html#contact" class="btn btn-secondary" data-i18n="landingPackageDiscuss"> Discuss Package </a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="landingPackageDiscuss"> Discuss Package </a>
               </div>
             </article>
           </div>
@@ -448,7 +437,222 @@
           </div>
         </div>
       </section>
+
+      <!-- ===== SCOPE & REQUIREMENTS ===== -->
+      <section id="scope" class="scope">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label" data-i18n="landingScopeLabel">Scope & Requirements</p>
+
+            <h2 data-i18n="landingScopeTitle">Clear expectations before the project starts.</h2>
+
+            <p class="section-description" data-i18n="landingScopeDescription">Each project follows an agreed scope, revision limit, and client requirements to keep the work focused and predictable.</p>
+          </div>
+
+          <div class="scope-grid">
+            <!-- ===== Revisions ===== -->
+            <article class="scope-item">
+              <h3 data-i18n="landingScopeRevisionTitle">Revisions</h3>
+
+              <p data-i18n="landingScopeRevisionDescription">
+                One revision round means one consolidated batch of client feedback. Revisions may include text, images, colors, spacing, and minor UI adjustments within the agreed project scope.
+              </p>
+            </article>
+
+            <!-- ===== Additional Work ===== -->
+            <article class="scope-item">
+              <h3 data-i18n="landingScopeAdditionalTitle">Additional Work</h3>
+
+              <p data-i18n="landingScopeAdditionalDescription">New sections, new features, major redesigns, concept changes, or new requirements are considered additional work and are not counted as regular revisions.</p>
+            </article>
+
+            <!-- ===== Deployment ===== -->
+            <article class="scope-item">
+              <h3 data-i18n="landingScopeDeploymentTitle">Deployment Assistance</h3>
+
+              <p data-i18n="landingScopeDeploymentDescription">One deployment assistance is included for a compatible client-owned hosting platform, including basic configuration and a final check after deployment.</p>
+            </article>
+
+            <!-- ===== Client Requirements ===== -->
+            <article class="scope-item">
+              <h3 data-i18n="landingScopeRequirementsTitle">What You Provide</h3>
+
+              <ul class="scope-list">
+                <li data-i18n="landingScopeRequirementContent">Final text and website content</li>
+
+                <li data-i18n="landingScopeRequirementBranding">Logo and branding assets, if available</li>
+
+                <li data-i18n="landingScopeRequirementImages">Images and supporting assets</li>
+
+                <li data-i18n="landingScopeRequirementLinks">Contact and social media links</li>
+
+                <li data-i18n="landingScopeRequirementReferences">References and special requirements</li>
+
+                <li data-i18n="landingScopeRequirementHosting">Hosting or domain access when deployment is required</li>
+              </ul>
+            </article>
+
+            <!-- ===== Not Included ===== -->
+            <article class="scope-item scope-item-wide">
+              <h3 data-i18n="landingScopeExcludedTitle">Not Included</h3>
+
+              <ul class="scope-list">
+                <li data-i18n="landingScopeExcludedCopywriting">Copywriting from scratch</li>
+
+                <li data-i18n="landingScopeExcludedBranding">Logo or brand identity creation</li>
+
+                <li data-i18n="landingScopeExcludedBackend">Custom backend or database</li>
+
+                <li data-i18n="landingScopeExcludedAuth">Authentication or login system</li>
+
+                <li data-i18n="landingScopeExcludedDashboard">Admin dashboard or CMS</li>
+
+                <li data-i18n="landingScopeExcludedCommerce">E-commerce or payment system</li>
+
+                <li data-i18n="landingScopeExcludedIntegration">Complex API or third-party integrations</li>
+
+                <li data-i18n="landingScopeExcludedHosting">Hosting and domain fees</li>
+
+                <li data-i18n="landingScopeExcludedMaintenance">Ongoing maintenance</li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="scope-note" data-i18n="landingScopeTimelineNote">Project timeline begins after the required materials and project requirements have been received.</p>
+        </div>
+      </section>
+
+      <!-- ===== PROCESS ===== -->
+      <section id="process" class="experience">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label" data-i18n="landingProcessLabel">Process</p>
+
+            <h2 data-i18n="landingProcessTitle">A straightforward process from scope to launch.</h2>
+
+            <p class="section-description" data-i18n="landingProcessDescription">Each stage keeps the project requirements, development, feedback, and delivery clearly organized.</p>
+          </div>
+
+          <div class="experience-list">
+            <!-- ===== Step 01 ===== -->
+            <article class="experience-item">
+              <div class="experience-date">
+                <span>01</span>
+              </div>
+
+              <div class="experience-content">
+                <div class="experience-header">
+                  <div>
+                    <h3 data-i18n="landingProcessScopeTitle">Scope & Requirements</h3>
+                  </div>
+                </div>
+
+                <p class="experience-description" data-i18n="landingProcessScopeDescription">We confirm the selected package, project requirements, content, references, and final scope before development begins.</p>
+              </div>
+            </article>
+
+            <!-- ===== Step 02 ===== -->
+            <article class="experience-item">
+              <div class="experience-date">
+                <span>02</span>
+              </div>
+
+              <div class="experience-content">
+                <div class="experience-header">
+                  <div>
+                    <h3 data-i18n="landingProcessDevelopmentTitle">Development</h3>
+                  </div>
+                </div>
+
+                <p class="experience-description" data-i18n="landingProcessDevelopmentDescription">The landing page is developed responsively according to the agreed content, structure, and package scope.</p>
+              </div>
+            </article>
+
+            <!-- ===== Step 03 ===== -->
+            <article class="experience-item">
+              <div class="experience-date">
+                <span>03</span>
+              </div>
+
+              <div class="experience-content">
+                <div class="experience-header">
+                  <div>
+                    <h3 data-i18n="landingProcessReviewTitle">Review & Revisions</h3>
+                  </div>
+                </div>
+
+                <p class="experience-description" data-i18n="landingProcessReviewDescription">You review the result and provide consolidated feedback for the revision rounds included in the selected package.</p>
+              </div>
+            </article>
+
+            <!-- ===== Step 04 ===== -->
+            <article class="experience-item">
+              <div class="experience-date">
+                <span>04</span>
+              </div>
+
+              <div class="experience-content">
+                <div class="experience-header">
+                  <div>
+                    <h3 data-i18n="landingProcessDeliveryTitle">Final Check & Delivery</h3>
+                  </div>
+                </div>
+
+                <p class="experience-description" data-i18n="landingProcessDeliveryDescription">The final version is checked before source files are delivered and deployment assistance is provided when required.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-heading">
+              <p class="section-label" data-i18n="landingContactLabel">Start a Project</p>
+
+              <h2>
+                <span data-i18n="landingContactTitleLine1"> Ready to build your </span>
+                <br />
+                <span data-i18n="landingContactTitleLine2"> landing page? </span>
+              </h2>
+
+              <p class="contact-description" data-i18n="landingContactDescription">Tell me about your project, the package you're considering, and what you want your landing page to achieve.</p>
+            </div>
+
+            <div class="contact-actions">
+              <a href="https://wa.me/628XXXXXXXXXX" class="contact-primary" id="whatsappProjectLink" data-service="landingPage" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="landingContactButton"> Discuss Your Project </span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-brand">
+            <img src="assets/icons/apn-logo.webp" alt="APN Logo" class="footer-logo" />
+            <span>APN Services</span>
+          </div>
+
+          <div class="footer-copy">
+            <span>© 2026</span>
+            <span data-i18n="footerRights">All rights reserved.</span>
+          </div>
+
+          <a href="#hero" class="back-to-top">
+            <span data-i18n="footerBackToTop">Back to top</span>
+            <span aria-hidden="true">↑</span>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="data/translations.js"></script>
     <script src="assets/js/main.js"></script>

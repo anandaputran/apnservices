@@ -42,19 +42,29 @@ document.addEventListener("keydown", (event) => {
 });
 
 // ===== Whatsapp =====
-
 const whatsappProjectLink = document.querySelector("#whatsappProjectLink");
 
 const whatsappMessages = {
-  en: "Hi, I'm interested in APN Services and would like to discuss my website project.",
-  id: "Halo, saya tertarik dengan layanan APN Services dan ingin mendiskusikan kebutuhan website saya.",
+  default: {
+    en: "Hi, I'm interested in APN Services and would like to discuss my website project.",
+    id: "Halo, saya tertarik dengan layanan APN Services dan ingin mendiskusikan kebutuhan website saya.",
+  },
+  landingPage: {
+    en: "Hi, I'm interested in your Landing Page Development service and would like to discuss my project.",
+    id: "Halo, saya tertarik dengan layanan Landing Page Development dan ingin mendiskusikan proyek saya.",
+  },
+  companyProfile: {
+    en: "Hi, I'm interested in your Company Profile Website service and would like to discuss my project.",
+    id: "Halo, saya tertarik dengan layanan Company Profile Website dan ingin mendiskusikan proyek saya.",
+  },
 };
 
 function updateWhatsAppLink(language) {
   if (!whatsappProjectLink) return;
 
-  const phoneNumber = "628XXXXXXXXXX";
-  const message = encodeURIComponent(whatsappMessages[language]);
+  const phoneNumber = "6285694775590";
+  const service = whatsappProjectLink.dataset.service || "default";
+  const message = encodeURIComponent(whatsappMessages[service][language]);
 
   whatsappProjectLink.href = `https://wa.me/${phoneNumber}?text=${message}`;
 }
@@ -98,21 +108,42 @@ updateLanguage(currentLanguage);
 
 document.addEventListener("DOMContentLoaded", () => {
   const packageCards = document.querySelectorAll(".package-card");
+  const tabletBreakpoint = window.matchMedia("(max-width: 900px)");
+
+  function setPackageState() {
+    packageCards.forEach((card) => {
+      const toggle = card.querySelector(".package-toggle");
+
+      if (!toggle) return;
+
+      const isRecommended = card.classList.contains("package-card-featured");
+
+      if (tabletBreakpoint.matches) {
+        if (isRecommended) {
+          card.classList.add("is-open");
+          toggle.setAttribute("aria-expanded", "true");
+          toggle.querySelector("span").textContent = "−";
+        } else {
+          card.classList.remove("is-open");
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.querySelector("span").textContent = "＋";
+        }
+      } else {
+        card.classList.add("is-open");
+        toggle.setAttribute("aria-expanded", "true");
+        toggle.querySelector("span").textContent = "−";
+      }
+    });
+  }
 
   packageCards.forEach((card) => {
     const toggle = card.querySelector(".package-toggle");
 
     if (!toggle) return;
 
-    const isRecommended = card.classList.contains("package-card-featured");
-
-    if (isRecommended) {
-      card.classList.add("is-open");
-      toggle.setAttribute("aria-expanded", "true");
-      toggle.querySelector("span").textContent = "−";
-    }
-
     toggle.addEventListener("click", () => {
+      if (!tabletBreakpoint.matches) return;
+
       card.classList.toggle("is-open");
 
       const isOpen = card.classList.contains("is-open");
@@ -121,4 +152,8 @@ document.addEventListener("DOMContentLoaded", () => {
       toggle.querySelector("span").textContent = isOpen ? "−" : "＋";
     });
   });
+
+  setPackageState();
+
+  tabletBreakpoint.addEventListener("change", setPackageState);
 });

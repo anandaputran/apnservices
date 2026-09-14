@@ -151,13 +151,6 @@ const translations = {
     landingPackageRecommended: "Recommended",
     landingPackageDiscuss: "Discuss Package",
 
-    // Temporary legacy keys - remove after CP10 final cleanup
-    landingPackagePricePlaceholder: "Pricing to be finalized",
-    landingPackageDefinedScope: "Clearly defined project scope",
-    landingPackageBrowserCheck: "Basic browser and device checks",
-    landingPackageScopeLabel: "Scope",
-    landingPackageScopePending: "To Be Finalized",
-
     // ===== Landing Page Add-ons =====
     landingAddonsLabel: "Add-ons",
     landingAddonsTitle: "Extend your package when the project needs more.",
@@ -174,6 +167,65 @@ const translations = {
 
     landingAddonRevisionTitle: "Additional Revision Round",
     landingAddonRevisionDescription: "Add one revision round for changes that remain within the agreed project scope.",
+
+    // ===== Landing Page Scope & Requirements =====
+    landingScopeLabel: "Scope & Requirements",
+    landingScopeTitle: "Clear expectations before the project starts.",
+    landingScopeDescription: "Each project follows an agreed scope, revision limit, and client requirements to keep the work focused and predictable.",
+
+    landingScopeRevisionTitle: "Revisions",
+    landingScopeRevisionDescription: "One revision round means one consolidated batch of client feedback. Revisions may include text, images, colors, spacing, and minor UI adjustments within the agreed project scope.",
+
+    landingScopeAdditionalTitle: "Additional Work",
+    landingScopeAdditionalDescription: "New sections, new features, major redesigns, concept changes, or new requirements are considered additional work and are not counted as regular revisions.",
+
+    landingScopeDeploymentTitle: "Deployment Assistance",
+    landingScopeDeploymentDescription: "One deployment assistance is included for a compatible client-owned hosting platform, including basic configuration and a final check after deployment.",
+
+    landingScopeRequirementsTitle: "What You Provide",
+    landingScopeRequirementContent: "Final text and website content",
+    landingScopeRequirementBranding: "Logo and branding assets, if available",
+    landingScopeRequirementImages: "Images and supporting assets",
+    landingScopeRequirementLinks: "Contact and social media links",
+    landingScopeRequirementReferences: "References and special requirements",
+    landingScopeRequirementHosting: "Hosting or domain access when deployment is required",
+
+    landingScopeExcludedTitle: "Not Included",
+    landingScopeExcludedCopywriting: "Copywriting from scratch",
+    landingScopeExcludedBranding: "Logo or brand identity creation",
+    landingScopeExcludedBackend: "Custom backend or database",
+    landingScopeExcludedAuth: "Authentication or login system",
+    landingScopeExcludedDashboard: "Admin dashboard or CMS",
+    landingScopeExcludedCommerce: "E-commerce or payment system",
+    landingScopeExcludedIntegration: "Complex API or third-party integrations",
+    landingScopeExcludedHosting: "Hosting and domain fees",
+    landingScopeExcludedMaintenance: "Ongoing maintenance",
+
+    landingScopeTimelineNote: "Project timeline begins after the required materials and project requirements have been received.",
+
+    // ===== Landing Page Process =====
+    landingProcessLabel: "Process",
+    landingProcessTitle: "A straightforward process from scope to launch.",
+    landingProcessDescription: "Each stage keeps the project requirements, development, feedback, and delivery clearly organized.",
+
+    landingProcessScopeTitle: "Scope & Requirements",
+    landingProcessScopeDescription: "We confirm the selected package, project requirements, content, references, and final scope before development begins.",
+
+    landingProcessDevelopmentTitle: "Development",
+    landingProcessDevelopmentDescription: "The landing page is developed responsively according to the agreed content, structure, and package scope.",
+
+    landingProcessReviewTitle: "Review & Revisions",
+    landingProcessReviewDescription: "You review the result and provide consolidated feedback for the revision rounds included in the selected package.",
+
+    landingProcessDeliveryTitle: "Final Check & Delivery",
+    landingProcessDeliveryDescription: "The final version is checked before source files are delivered and deployment assistance is provided when required.",
+
+    // ===== Landing Page Contact =====
+    landingContactLabel: "Start a Project",
+    landingContactTitleLine1: "Ready to build your",
+    landingContactTitleLine2: "landing page?",
+    landingContactDescription: "Tell me about your project, the package you're considering, and what you want your landing page to achieve.",
+    landingContactButton: "Discuss Your Project",
   },
 
   id: {
@@ -328,13 +380,6 @@ const translations = {
     landingPackageRecommended: "Rekomendasi",
     landingPackageDiscuss: "Diskusikan Paket",
 
-    // Temporary legacy keys - remove after CP10 final cleanup
-    landingPackagePricePlaceholder: "Harga akan ditentukan",
-    landingPackageDefinedScope: "Scope proyek yang jelas",
-    landingPackageBrowserCheck: "Pengecekan dasar browser dan perangkat",
-    landingPackageScopeLabel: "Scope",
-    landingPackageScopePending: "Akan Ditentukan",
-
     // ===== Landing Page Add-ons =====
     landingAddonsLabel: "Add-ons",
     landingAddonsTitle: "Tambahkan kebutuhan proyek di luar paket utama.",
@@ -351,5 +396,65 @@ const translations = {
 
     landingAddonRevisionTitle: "Revisi Tambahan",
     landingAddonRevisionDescription: "Tambahkan satu ronde revisi untuk perubahan yang tetap berada dalam scope proyek yang telah disepakati.",
+
+    // ===== Landing Page Scope & Requirements =====
+    landingScopeLabel: "Scope & Persyaratan",
+    landingScopeTitle: "Ekspektasi yang jelas sebelum proyek dimulai.",
+    landingScopeDescription: "Setiap proyek mengikuti scope, batas revisi, dan kebutuhan dari klien yang telah disepakati agar pengerjaan tetap fokus dan terarah.",
+
+    landingScopeRevisionTitle: "Revisi",
+    landingScopeRevisionDescription:
+      "Satu ronde revisi berarti satu kumpulan feedback dari klien yang disampaikan sekaligus. Revisi dapat mencakup teks, gambar, warna, spacing, dan penyesuaian UI minor selama masih berada dalam scope proyek yang telah disepakati.",
+
+    landingScopeAdditionalTitle: "Pekerjaan Tambahan",
+    landingScopeAdditionalDescription: "Section baru, fitur baru, redesign besar, perubahan konsep, atau kebutuhan baru dianggap sebagai pekerjaan tambahan dan tidak dihitung sebagai revisi biasa.",
+
+    landingScopeDeploymentTitle: "Bantuan Deployment",
+    landingScopeDeploymentDescription: "Satu kali bantuan deployment termasuk untuk hosting atau platform milik klien yang kompatibel, mencakup konfigurasi dasar dan pengecekan akhir setelah deployment.",
+
+    landingScopeRequirementsTitle: "Yang Anda Sediakan",
+    landingScopeRequirementContent: "Teks final dan konten website",
+    landingScopeRequirementBranding: "Logo dan aset branding, jika tersedia",
+    landingScopeRequirementImages: "Gambar dan aset pendukung",
+    landingScopeRequirementLinks: "Link kontak dan media sosial",
+    landingScopeRequirementReferences: "Referensi dan kebutuhan khusus",
+    landingScopeRequirementHosting: "Akses hosting atau domain jika deployment diperlukan",
+
+    landingScopeExcludedTitle: "Tidak Termasuk",
+    landingScopeExcludedCopywriting: "Copywriting dari awal",
+    landingScopeExcludedBranding: "Pembuatan logo atau brand identity",
+    landingScopeExcludedBackend: "Custom backend atau database",
+    landingScopeExcludedAuth: "Sistem autentikasi atau login",
+    landingScopeExcludedDashboard: "Admin dashboard atau CMS",
+    landingScopeExcludedCommerce: "E-commerce atau sistem pembayaran",
+    landingScopeExcludedIntegration: "Integrasi API atau pihak ketiga yang kompleks",
+    landingScopeExcludedHosting: "Biaya hosting dan domain",
+    landingScopeExcludedMaintenance: "Maintenance berkelanjutan",
+
+    landingScopeTimelineNote: "Timeline proyek dimulai setelah materi dan kebutuhan proyek yang diperlukan telah diterima.",
+
+    // ===== Landing Page Process =====
+    landingProcessLabel: "Proses",
+    landingProcessTitle: "Proses yang jelas dari penentuan scope hingga peluncuran.",
+    landingProcessDescription: "Setiap tahap menjaga kebutuhan proyek, pengembangan, feedback, dan penyerahan hasil tetap terorganisir dengan jelas.",
+
+    landingProcessScopeTitle: "Scope & Persyaratan",
+    landingProcessScopeDescription: "Kami mengonfirmasi paket yang dipilih, kebutuhan proyek, konten, referensi, dan scope akhir sebelum pengembangan dimulai.",
+
+    landingProcessDevelopmentTitle: "Pengembangan",
+    landingProcessDevelopmentDescription: "Landing page dikembangkan secara responsif sesuai dengan konten, struktur, dan scope paket yang telah disepakati.",
+
+    landingProcessReviewTitle: "Review & Revisi",
+    landingProcessReviewDescription: "Anda meninjau hasil pengerjaan dan memberikan feedback yang telah dirangkum untuk ronde revisi yang termasuk dalam paket yang dipilih.",
+
+    landingProcessDeliveryTitle: "Pengecekan Akhir & Penyerahan",
+    landingProcessDeliveryDescription: "Versi final diperiksa sebelum source file diserahkan dan bantuan deployment diberikan jika diperlukan.",
+
+    // ===== Landing Page Contact =====
+    landingContactLabel: "Mulai Proyek",
+    landingContactTitleLine1: "Siap membangun",
+    landingContactTitleLine2: "landing page Anda?",
+    landingContactDescription: "Ceritakan tentang proyek Anda, paket yang sedang dipertimbangkan, dan tujuan yang ingin dicapai melalui landing page.",
+    landingContactButton: "Diskusikan Proyek Anda",
   },
 };
