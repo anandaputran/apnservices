@@ -41,6 +41,24 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+// ===== Whatsapp =====
+
+const whatsappProjectLink = document.querySelector("#whatsappProjectLink");
+
+const whatsappMessages = {
+  en: "Hi, I'm interested in APN Services and would like to discuss my website project.",
+  id: "Halo, saya tertarik dengan layanan APN Services dan ingin mendiskusikan kebutuhan website saya.",
+};
+
+function updateWhatsAppLink(language) {
+  if (!whatsappProjectLink) return;
+
+  const phoneNumber = "628XXXXXXXXXX";
+  const message = encodeURIComponent(whatsappMessages[language]);
+
+  whatsappProjectLink.href = `https://wa.me/${phoneNumber}?text=${message}`;
+}
+
 // ===== Language Switcher =====
 
 const languageToggle = document.querySelector(".language-toggle");
@@ -76,18 +94,31 @@ languageToggle.addEventListener("click", () => {
 
 updateLanguage(currentLanguage);
 
-// ===== Whatsapp =====
+// ===== PACKAGE ACCORDION =====
 
-const whatsappProjectLink = document.querySelector("#whatsappProjectLink");
+document.addEventListener("DOMContentLoaded", () => {
+  const packageCards = document.querySelectorAll(".package-card");
 
-const whatsappMessages = {
-  en: "Hi, I'm interested in APN Services and would like to discuss my website project.",
-  id: "Halo, saya tertarik dengan layanan APN Services dan ingin mendiskusikan kebutuhan website saya.",
-};
+  packageCards.forEach((card) => {
+    const toggle = card.querySelector(".package-toggle");
 
-function updateWhatsAppLink(language) {
-  const phoneNumber = "6285694775590";
-  const message = encodeURIComponent(whatsappMessages[language]);
+    if (!toggle) return;
 
-  whatsappProjectLink.href = `https://wa.me/${phoneNumber}?text=${message}`;
-}
+    const isRecommended = card.classList.contains("package-card-featured");
+
+    if (isRecommended) {
+      card.classList.add("is-open");
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.querySelector("span").textContent = "−";
+    }
+
+    toggle.addEventListener("click", () => {
+      card.classList.toggle("is-open");
+
+      const isOpen = card.classList.contains("is-open");
+
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.querySelector("span").textContent = isOpen ? "−" : "＋";
+    });
+  });
+});

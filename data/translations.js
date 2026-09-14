@@ -70,6 +70,110 @@ const translations = {
     // ===== Footer =====
     footerRights: "All rights reserved.",
     footerBackToTop: "Back to top",
+
+    // ===== Landing Page Hero =====
+    landingHeroEyebrow: "Landing Page Development",
+    landingHeroTitle: "A focused landing page built around one clear goal.",
+    landingHeroDescription: "A responsive one-page website for promoting a product, service, campaign, event, or specific business objective without unnecessary complexity.",
+    landingHeroPrimary: "Explore the Service",
+    landingHeroSecondary: "Discuss a Project",
+
+    // ===== Landing Page Overview =====
+    landingOverviewLabel: "Overview",
+    landingOverviewTitle: "A simple website format for a focused business objective.",
+
+    landingOverviewDescription1: "A landing page is designed around one primary goal, such as introducing a service, promoting a product, supporting a campaign, collecting inquiries, or directing visitors toward a specific action.",
+
+    landingOverviewDescription2: "The project focuses on responsive implementation, clear information hierarchy, and a defined scope so the page stays practical and easy to maintain.",
+
+    landingOverviewMeta1Label: "Best For",
+    landingOverviewMeta1Value: "Product, Service, Campaign",
+
+    landingOverviewMeta2Label: "Format",
+    landingOverviewMeta2Value: "One-Page Website",
+
+    landingOverviewMeta3Label: "Layout",
+    landingOverviewMeta3Value: "Responsive",
+
+    landingOverviewMeta4Label: "Project Type",
+    landingOverviewMeta4Value: "Fixed Scope",
+
+    // ===== Landing Page Packages =====
+    landingPackagesLabel: "Packages",
+    landingPackagesTitle: "Choose the package that matches your landing page needs.",
+    landingPackagesDescription: "Each package is built around a clearly defined scope so the project stays focused, predictable, and easier to manage.",
+
+    landingPackageStarter: "Starter",
+    landingPackageStarterTitle: "Simple Landing Page",
+    landingPackageStarterDescription: "For a simple promotional page with a focused message and essential sections.",
+
+    landingPackageStandard: "Standard",
+    landingPackageStandardTitle: "Business Landing Page",
+    landingPackageStandardDescription: "For a business that needs a more complete landing page with stronger content structure and presentation.",
+
+    landingPackageAdvanced: "Advanced",
+    landingPackageAdvancedTitle: "Extended Landing Page",
+    landingPackageAdvancedDescription: "For a landing page that needs a broader content structure while remaining focused on one main business objective.",
+
+    landingPackageInternational: "International",
+    landingPackageDomestic: "Domestic",
+
+    landingPackageStarterSections: "Up to 3 sections",
+    landingPackageStandardSections: "Up to 5 sections",
+    landingPackageAdvancedSections: "Up to 7 sections",
+
+    landingPackageStarterTimeline: "5 working days",
+    landingPackageStandardTimeline: "7 working days",
+    landingPackageAdvancedTimeline: "10 working days",
+
+    landingPackageRevisions: "2 revision rounds",
+
+    landingPackageResponsive: "Responsive desktop, tablet & mobile",
+    landingPackageContentImplementation: "Client-provided content implementation",
+    landingPackageContactLink: "CTA / WhatsApp / contact link",
+
+    landingPackageNoJs: "Basic JS interaction not included",
+    landingPackageStandardJs: "Up to 2 basic JS interactions",
+    landingPackageAdvancedJs: "Up to 4 basic JS interactions",
+
+    landingPackageTesting: "Basic layout & function testing",
+    landingPackageSourceFiles: "Source files included",
+    landingPackageDeployment: "Deployment assistance included",
+
+    landingPackageBestForLabel: "Best For",
+    landingPackageStarterBestFor: "Simple Promotion",
+    landingPackageStandardBestFor: "Business Promotion",
+    landingPackageAdvancedBestFor: "Larger Campaign",
+
+    landingPackageHostingDomainLabel: "Hosting & Domain",
+    landingPackageNotIncluded: "Not Included",
+
+    landingPackageRecommended: "Recommended",
+    landingPackageDiscuss: "Discuss Package",
+
+    // Temporary legacy keys - remove after CP10 final cleanup
+    landingPackagePricePlaceholder: "Pricing to be finalized",
+    landingPackageDefinedScope: "Clearly defined project scope",
+    landingPackageBrowserCheck: "Basic browser and device checks",
+    landingPackageScopeLabel: "Scope",
+    landingPackageScopePending: "To Be Finalized",
+
+    // ===== Landing Page Add-ons =====
+    landingAddonsLabel: "Add-ons",
+    landingAddonsTitle: "Extend your package when the project needs more.",
+    landingAddonsDescription: "Optional additions for requirements beyond the selected package scope.",
+
+    landingAddonSectionTitle: "Additional Section",
+    landingAddonSectionDescription: "Add one section beyond the section limit included in your package.",
+
+    landingAddonInteractionTitle: "Additional Basic JS Interaction",
+    landingAddonInteractionDescription: "Add one basic frontend interaction beyond the amount included in your package.",
+
+    landingAddonFormTitle: "Contact Form Integration",
+    landingAddonFormDescription: "Add one simple contact form that sends submitted information to email.",
+
+    landingAddonRevisionTitle: "Additional Revision Round",
+    landingAddonRevisionDescription: "Add one revision round for changes that remain within the agreed project scope.",
   },
 
   id: {
@@ -143,5 +247,109 @@ const translations = {
     // ===== Footer =====
     footerRights: "Hak cipta dilindungi.",
     footerBackToTop: "Kembali ke atas",
+
+    // ===== Landing Page Hero =====
+    landingHeroEyebrow: "Pengembangan Landing Page",
+    landingHeroTitle: "Landing page yang fokus pada satu tujuan yang jelas.",
+    landingHeroDescription: "Website satu halaman yang responsif untuk mempromosikan produk, layanan, kampanye, acara, atau tujuan bisnis tertentu tanpa kompleksitas yang tidak diperlukan.",
+    landingHeroPrimary: "Lihat Layanan",
+    landingHeroSecondary: "Diskusikan Proyek",
+
+    // ===== Landing Page Overview =====
+    landingOverviewLabel: "Gambaran Layanan",
+    landingOverviewTitle: "Format website sederhana untuk tujuan bisnis yang terfokus.",
+
+    landingOverviewDescription1: "Landing page dirancang untuk satu tujuan utama, seperti memperkenalkan layanan, mempromosikan produk, mendukung kampanye, menerima inquiry, atau mengarahkan pengunjung ke tindakan tertentu.",
+
+    landingOverviewDescription2: "Pengerjaan berfokus pada implementasi responsif, susunan informasi yang jelas, dan scope yang terdefinisi agar halaman tetap praktis dan mudah dikelola.",
+
+    landingOverviewMeta1Label: "Cocok Untuk",
+    landingOverviewMeta1Value: "Produk, Layanan, Kampanye",
+
+    landingOverviewMeta2Label: "Format",
+    landingOverviewMeta2Value: "Website Satu Halaman",
+
+    landingOverviewMeta3Label: "Layout",
+    landingOverviewMeta3Value: "Responsif",
+
+    landingOverviewMeta4Label: "Tipe Proyek",
+    landingOverviewMeta4Value: "Fixed Scope",
+
+    // ===== Landing Page Packages =====
+    landingPackagesLabel: "Paket",
+    landingPackagesTitle: "Pilih paket yang sesuai dengan kebutuhan landing page Anda.",
+    landingPackagesDescription: "Setiap paket dibuat dengan scope yang jelas agar proyek tetap fokus, terarah, dan lebih mudah dikelola.",
+
+    landingPackageStarter: "Starter",
+    landingPackageStarterTitle: "Landing Page Sederhana",
+    landingPackageStarterDescription: "Untuk halaman promosi sederhana dengan pesan yang fokus dan bagian-bagian utama yang dibutuhkan.",
+
+    landingPackageStandard: "Standard",
+    landingPackageStandardTitle: "Landing Page Bisnis",
+    landingPackageStandardDescription: "Untuk bisnis yang membutuhkan landing page lebih lengkap dengan struktur konten dan presentasi yang lebih kuat.",
+
+    landingPackageAdvanced: "Advanced",
+    landingPackageAdvancedTitle: "Landing Page Extended",
+    landingPackageAdvancedDescription: "Untuk landing page dengan struktur konten yang lebih luas tetapi tetap berfokus pada satu tujuan bisnis utama.",
+
+    landingPackageInternational: "Internasional",
+    landingPackageDomestic: "Domestik",
+
+    landingPackageStarterSections: "Hingga 3 section",
+    landingPackageStandardSections: "Hingga 5 section",
+    landingPackageAdvancedSections: "Hingga 7 section",
+
+    landingPackageStarterTimeline: "5 hari kerja",
+    landingPackageStandardTimeline: "7 hari kerja",
+    landingPackageAdvancedTimeline: "10 hari kerja",
+
+    landingPackageRevisions: "2x revisi",
+
+    landingPackageResponsive: "Responsif desktop, tablet & mobile",
+    landingPackageContentImplementation: "Implementasi konten dari klien",
+    landingPackageContactLink: "CTA / WhatsApp / link kontak",
+
+    landingPackageNoJs: "Basic JS interaction tidak termasuk",
+    landingPackageStandardJs: "Hingga 2 basic JS interactions",
+    landingPackageAdvancedJs: "Hingga 4 basic JS interactions",
+
+    landingPackageTesting: "Testing dasar tampilan & fungsi",
+    landingPackageSourceFiles: "Source files termasuk",
+    landingPackageDeployment: "Bantuan deployment termasuk",
+
+    landingPackageBestForLabel: "Cocok Untuk",
+    landingPackageStarterBestFor: "Promosi Sederhana",
+    landingPackageStandardBestFor: "Promosi Bisnis",
+    landingPackageAdvancedBestFor: "Kampanye Lebih Besar",
+
+    landingPackageHostingDomainLabel: "Hosting & Domain",
+    landingPackageNotIncluded: "Tidak Termasuk",
+
+    landingPackageRecommended: "Rekomendasi",
+    landingPackageDiscuss: "Diskusikan Paket",
+
+    // Temporary legacy keys - remove after CP10 final cleanup
+    landingPackagePricePlaceholder: "Harga akan ditentukan",
+    landingPackageDefinedScope: "Scope proyek yang jelas",
+    landingPackageBrowserCheck: "Pengecekan dasar browser dan perangkat",
+    landingPackageScopeLabel: "Scope",
+    landingPackageScopePending: "Akan Ditentukan",
+
+    // ===== Landing Page Add-ons =====
+    landingAddonsLabel: "Add-ons",
+    landingAddonsTitle: "Tambahkan kebutuhan proyek di luar paket utama.",
+    landingAddonsDescription: "Tambahan opsional untuk kebutuhan yang berada di luar scope paket yang dipilih.",
+
+    landingAddonSectionTitle: "Section Tambahan",
+    landingAddonSectionDescription: "Tambahkan satu section di luar batas section yang sudah termasuk dalam paket.",
+
+    landingAddonInteractionTitle: "Basic JS Interaction Tambahan",
+    landingAddonInteractionDescription: "Tambahkan satu interaksi frontend dasar di luar jumlah yang sudah termasuk dalam paket.",
+
+    landingAddonFormTitle: "Integrasi Contact Form",
+    landingAddonFormDescription: "Tambahkan satu contact form sederhana yang mengirimkan data ke email.",
+
+    landingAddonRevisionTitle: "Revisi Tambahan",
+    landingAddonRevisionDescription: "Tambahkan satu ronde revisi untuk perubahan yang tetap berada dalam scope proyek yang telah disepakati.",
   },
 };
